@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="相続不動産の窓口へのお問い合わせ・無料相談のご予約はこちら。相続した不動産の売却・査定・相談を承ります。">
+  <title>無料相談・お問い合わせ | 相続不動産の窓口</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.svg" alt="相続不動産の窓口">
+      </a>
+      <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="about.html">こんな方へ</a></li>
+          <li><a href="service.html">サービス</a></li>
+          <li><a href="flow.html">進め方</a></li>
+          <li><a href="cases.html">事例</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">相談フォーム</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary">無料相談する</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ページヘッダー -->
+    <section class="page-header">
+      <div class="container">
+        <h1>無料相談・お問い合わせ</h1>
+        <p>まずはお気軽にご相談ください</p>
+      </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-form">
+          <!-- フォーム -->
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">お名前<span class="required">*必須</span></label>
+              <input type="text" id="name" name="name" placeholder="例：山田 太郎" required aria-required="true">
+            </div>
+
+            <div class="form-group">
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="email" placeholder="例：yamada@example.com" aria-describedby="contact-hint">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">電話番号</label>
+              <input type="tel" id="phone" name="phone" placeholder="例：090-1234-5678">
+              <small id="contact-hint" style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem; display: block;">※メールアドレスまたは電話番号のいずれかをご入力ください</small>
+            </div>
+
+            <div class="form-group">
+              <label for="location">物件所在地（市区町村まで）<span class="required">*必須</span></label>
+              <input type="text" id="location" name="location" placeholder="例：東京都世田谷区" required aria-required="true">
+            </div>
+
+            <div class="form-group" id="satei">
+              <label for="status">現在の状況</label>
+              <select id="status" name="status">
+                <option value="">選択してください</option>
+                <option value="inherited">相続済み</option>
+                <option value="upcoming">これから相続予定</option>
+                <option value="shared">共有名義</option>
+                <option value="vacant">空き家になっている</option>
+                <option value="distant">遠方に住んでいる</option>
+                <option value="satei">査定だけ希望</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">ご相談内容</label>
+              <textarea id="message" name="message" placeholder="現在のお悩みやご質問など、自由にご記入ください。&#10;&#10;例：&#10;・父が亡くなり実家を相続しましたが、兄弟で意見が分かれています&#10;・相続登記がまだ済んでいません&#10;・税金がどのくらいかかるか知りたいです" aria-describedby="message-hint"></textarea>
+              <small id="message-hint" style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem; display: block;">※ご記入いただいた内容は、ご相談時の参考にさせていただきます</small>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary btn-lg">無料相談を予約する</button>
+            </div>
+          </form>
+
+          <!-- 送信完了メッセージ -->
+          <div class="form-success">
+            <div class="form-success-icon">✓</div>
+            <h3>送信ありがとうございます</h3>
+            <p>お問い合わせを受け付けました。<br>24時間以内に担当者よりご連絡いたします。</p>
+            <p style="margin-top: 2rem;"><a href="index.html" class="btn btn-secondary">トップページに戻る</a></p>
+          </div>
+        </div>
+
+        <!-- 補足情報 -->
+        <div style="max-width: 700px; margin: 3rem auto 0; text-align: center;">
+          <p style="color: var(--text-light); font-size: 0.95rem; margin-bottom: 1.5rem;">
+            <strong>お電話でのお問い合わせ</strong><br>
+            <span style="font-size: 1.25rem; color: var(--primary-color); font-weight: 600;">03-1234-5678</span><br>
+            受付時間：9:00〜18:00（土日祝休）
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">
+            ※売却を強制することはありません。まずは状況を整理するだけでもOKです。<br>
+            ※ご相談内容は秘密厳守いたします。
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-company">
+          <h3>相続不動産の窓口</h3>
+          <p>〒100-0001 東京都千代田区千代田1-1-1</p>
+          <p>TEL: 03-1234-5678</p>
+          <p>営業時間: 9:00〜18:00（土日祝休）</p>
+        </div>
+        <div class="footer-area">
+          <h4>対応エリア</h4>
+          <p>東京都・神奈川県・埼玉県・千葉県<br>大阪府・京都府・兵庫県</p>
+          <p>※その他エリアもご相談ください</p>
+        </div>
+        <div class="footer-links">
+          <h4>リンク</h4>
+          <ul>
+            <li><a href="about.html">こんな方へ</a></li>
+            <li><a href="service.html">サービス内容</a></li>
+            <li><a href="flow.html">進め方</a></li>
+            <li><a href="cases.html">事例</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-notice">※当サイトに掲載している税務・法務に関する情報は一般的な内容であり、個別の事案については必要に応じて税理士・司法書士・弁護士等の専門家をご紹介いたします。</p>
+        <p class="footer-copyright">&copy; 2024 相続不動産の窓口 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
